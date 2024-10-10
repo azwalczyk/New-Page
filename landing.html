@@ -1,0 +1,182 @@
+<style>
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-header {
+  font-weight: bold;
+  background-color: #9a8baa;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item {
+  padding: 0;
+  background-color: white;
+  border: 1px solid #dddddd;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item a {
+  color: #0073e6;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.grid-item a:hover {
+  text-decoration: underline;
+}
+
+.grid-item pre {
+  background: #eee;
+  padding: 6px 20px;
+  color: #222;
+  font-family: ubuntu;
+}
+
+.search-container {
+  margin-bottom: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #005bb5;
+}
+</style>
+
+<div class="search-container">
+  <form action="https://www.google.com/search" method="get" target="_self">
+    <input type="text" name="q" placeholder="Search Google..." required>
+    <button type="submit">Search</button>
+  </form>
+</div>
+
+<div class="main-grid">
+  <div class="grid-header">Trello</div>
+  <div class="grid-header">Github</div>
+  <div class="grid-header">Shopify</div>
+  <div class="grid-header">Store name</div>
+  <div class="grid-header">Git clone</div>
+
+  <!-- First row -->
+  <div class="grid-item"><a href="https://trello.com/b/mxOAkbBn/thai-oase" target="_self">Thai oase Trello</a></div>
+  <div class="grid-item"><a href="https://github.com/Azantic/Thai-Oase" target="_self">Thai oase GitHub</a></div>
+  <div class="grid-item"><a href="https://admin.shopify.com/store/ed2b33/themes?appLoadId=1d5649c4-190b-4fc0-bba2-490385a05527" target="_self">Thai oase Shopify</a></div>
+  <div class="grid-item">
+    <pre>ed2b33</pre>
+  </div>
+  <div class="grid-item">
+    <pre>git clone git@github.com:Azantic/Thai-Oase.git</pre>
+  </div>
+
+  <!-- Second row -->
+  <div class="grid-item"><a href="https://trello.com/b/5YEuwh8D/azantic-theme" target="_self">Azantic Theme Trello</a></div>
+  <div class="grid-item"><a href="https://github.com/Azantic/azantic-theme" target="_self">Azantic Theme GitHub</a></div>
+  <div class="grid-item"><a href="https://admin.shopify.com/store/azntc-theme/" target="_self">Azantic Theme Shopify</a></div>
+  <div class="grid-item">
+    <pre>azntc-theme</pre>
+  </div>
+  <div class="grid-item">
+    <pre>git clone git@github.com:Azantic/azantic-theme.git</pre>
+  </div>
+
+  <!-- Third row -->
+  <div class="grid-item"><a href="https://trello.com/b/42CAidkt/simplified-resumes" target="_self">Simplified Resumes Trello</a></div>
+  <div class="grid-item"><a href="https://github.com/Azantic/simplified-resumes" target="_self">Simplified Resumes GitHub</a></div>
+  <div class="grid-item"><a href="https://admin.shopify.com/store/simplified-resumes/themes?appLoadId=424e0c32-7879-4ef9-b9cc-68f38384dfa2" target="_self">Simplified Resumes Shopify</a></div>
+  <div class="grid-item">
+    <pre>simplified-resumes</pre>
+  </div>
+  <div class="grid-item">
+    <pre>git clone git@github.com:Azantic/simplified-resumes.git</pre>
+  </div>
+
+  <!-- Fourth row -->
+  <div class="grid-item"><a href="https://trello.com/b/T5GtUG0s/brainwave" target="_self">Brainwave Trello</a></div>
+  <div class="grid-item"><a href="https://github.com/Azantic/brainwaveusa" target="_self">Brainwave GitHub</a></div>
+  <div class="grid-item"><a href="https://admin.shopify.com/store/brainwaveusa/themes?appLoadId=261b67c2-ffa5-45ea-afb1-5bd692006ceb" target="_self">Brainwave Shopify</a></div>
+  <div class="grid-item">
+    <pre>brainwaveusa</pre>
+  </div>
+  <div class="grid-item">
+    <pre>git clone git@github.com:Azantic/brainwaveusa.git</pre>
+  </div>
+
+  <!-- Fifth row -->
+  <div class="grid-item">No Trello</div>
+  <div class="grid-item">No GitHub</div>
+  <div class="grid-item"><a href="https://admin.shopify.com/store/liha-dev/themes?appLoadId=b8e9aa66-a098-48f9-b738-16d23649a192" target="_self">liha-dev Shopify</a></div>
+  <div class="grid-item">
+    <pre>liha-dev</pre>
+  </div>
+  <div class="grid-item"></div>
+
+  <!-- Sixth row -->
+  <div class="grid-item"><a href="https://trello.com/b/UJgpqaQm/iscent" target="_self">iScent Trello</a></div>
+  <div class="grid-item"><a href="https://github.com/Azantic/iScent" target="_self">iScent GitHub</a></div>
+  <div class="grid-item"><a href="https://admin.shopify.com/store/iscent-ae/themes?appLoadId=eb223c5b-50d1-4841-b957-c1332150fc80" target="_self">iScent Shopify</a></div>
+  <div class="grid-item">
+    <pre>iscent-ae</pre>
+  </div>
+  <div class="grid-item">
+    <pre>git clone git@github.com:Azantic/iScent.git</pre>
+  </div>
+  
+  <!-- Seventh row -->
+  <div class="grid-item">No Trello</div>
+  <div class="grid-item"><a href="https://github.com/Azantic/rosenrot-naturkosmetik" target="_self">Rosenrot GitHub</a></div>
+  <div class="grid-item"><a href="https://admin.shopify.com/store/091960-61/themes?appLoadId=2bebad3e-ef95-47f0-9132-d4efb747de49" target="_self">Rosenrot Shopify</a></div>
+  <div class="grid-item">
+    <pre>091960-61</pre>
+  </div>
+  <div class="grid-item">
+    <pre>git@github.com:Azantic/rosenrot-naturkosmetik.git</pre>
+  </div>
+</div>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sprawdzamy, czy URL zawiera jakiekolwiek parametry
+            const url = window.location.href;
+            const baseUrl = url.split('?')[0]; // Usuwa parametry zapytania
+
+            // Podmieniamy URL na pusty (tylko jeśli nie jest to lokalny plik)
+            if (baseUrl !== url) {
+                history.replaceState(null, null, baseUrl);
+            }
+
+            // Ustawia fokus na input
+            const searchInput = document.querySelector('input[name="q"]');
+            if (searchInput) {
+                searchInput.focus();
+            }
+        });
+ </script>
